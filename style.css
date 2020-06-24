@@ -1,0 +1,11 @@
+body {
+    background-color: #1d1b1b;
+}
+.text{
+    color: #ec4d37; 
+    font-family: Futura;
+    font-size: 8vmin;
+    position: relative;
+    top: 45%;
+    left: 40%;
+}
