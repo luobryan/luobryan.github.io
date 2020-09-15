@@ -1,0 +1,51 @@
+body{
+    font-family: Futura;
+    background-color: #fdfcfa;
+}
+i:hover{
+    color:#129cce;
+}
+span:hover{
+    color: #129cce;
+}
+.header{
+    position: relative;
+    text-align: right;
+    top: 2%;
+    right: 2%;
+
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+i{
+    cursor: pointer;
+}
+#homeText{
+    cursor: pointer;
+    margin: 8px; 
+}
+#aboutText{
+    cursor: pointer;
+    margin: 8px;
+}
+#content{
+    position: relative;
+    top:40%;
+}
+.container{
+    text-align: center;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 200px){
+    .flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        font-size:30px;
+    }
+}
