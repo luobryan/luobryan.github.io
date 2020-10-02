@@ -1,5 +1,22 @@
-html {-webkit-text-size-adjust:none}
-
+html {-webkit-text-size-adjust:none;
+  
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+a{
+    color: black;
+}
+img {
+    border-radius: 5%; 
+    width: 400px;
+    max-width: 55%;
+}
 body{
     font-family: Futura;
     background-color: #fdfcfa;
@@ -14,13 +31,21 @@ span:hover{
     position: relative;
     text-align: right;
     top: 2%;
-    right: 2%;
-
+    animation: fadeIn ease 1s; 
 }
 .flex-container{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+}
+.flex-container-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn ease 1s; 
+
 }
 i{
     cursor: pointer;
@@ -35,11 +60,20 @@ i{
 }
 #content{
     position: relative;
-    top:40%;
+    top:25%;
+
 }
 .container{
     text-align: center;
     font-size: 50px;
+    animation: fadeIn ease 1s; 
+}
+.about-text-col{
+    width: 40%;
+    font-size: 48px;
+}
+.about-text{
+    font-size: 20px;
 }
 
 @media screen and (max-width: 200px){
@@ -47,7 +81,27 @@ i{
         flex-direction: column;
         text-align: center;
     }
+
     .container{
         font-size:30px;
+    }
+}
+@media screen and (max-width: 750px){
+    .flex-container-about{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #content{
+        top: 10%;
+    }
+
+    .about-text-col{
+        font-size: 18px;
+
+    }
+    .about-text{
+        font-size: 10px;
+      
     }
 }
